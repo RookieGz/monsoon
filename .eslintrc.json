@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime", // 为了覆盖plugin:react/recommended中 React 必须声明的提示
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+
+  "ignorePatterns": ["**/next.config.js", "server/utils/bugs/*", "webpack.*.config.*"],
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off"
+  }
+}
