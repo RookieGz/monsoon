@@ -1,7 +1,7 @@
 {
   "name": "monsoon",
   "version": "1.0.0",
-  "description": "",
+  "description": "一个将koa和nextjs结合的框架",
   "main": "index.js",
   "scripts": {
     "watch:server": "webpack --watch --progress --config webpack.server.config.js",
